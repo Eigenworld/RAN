@@ -51,9 +51,9 @@ The positive impact of normalized random weights on message passing is not seren
 </p>
 
 ## My Experiment Environments
-* [Python>=3.7](https://www.python.org/)
-* [Pytorch =1.5.1](https://pytorch.org)
-* [Pytorch_Geometric=1.5.0](https://pytorch-geometric.readthedocs.io/en/latest/)
+* [Python = 3.7](https://www.python.org/)
+* [Pytorch = 1.5.0](https://pytorch.org)
+* [Pytorch_Geometric = 1.5.0](https://pytorch-geometric.readthedocs.io/en/latest/)
 * [Cuda = 10.2](https://pytorch.org)
 * [GPU-> 'TITAN RTX'](https://pytorch.org)
 
