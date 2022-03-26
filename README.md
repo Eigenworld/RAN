@@ -1,8 +1,95 @@
-we will upload the ipython file before 4-1-2022.
+# Irregular Message Passing Networks
+**CORE ISSUE**: Is the effectiveness of message passing uniquely tied to the well-designed GNN propagation weight? Or could a similar effect be achieved using some ”bad” edge weights?
+
+In this work, we present the surprising positive impact of weight randomness on message passing. Through extensive experiments, we find that any normalized random edge weights (or graph attentions) can have a similar and, sometime, even stronger effect.
+
+<p align="center">
+  <img src='./img/table-1.png' width=800 height=400>
+</p>
+
+## Overview
+
+#### Random Weight Network (RWN):
+
+<p align="center">
+  <img src='./img/RWN.png' width=550>
+</p>
+
+#### Random Attention Network (RAN):
+
+<p align="center">
+  <img src='./img/RAN.png' width=450>
+</p>
+
+#### Random Multi-attention Network (RMN):
+
+<p align="center">
+  <img src='./img/RMN.png' width=650>
+</p>
 
 
 
-#  Irregular Message Passing Networks
+
+## Explanation
+The positive impact of normalized random weights on message passing is not serendipitous. The finding is: when random perturbations do not change the singular values of the original aggregator too much [Fig.2a vs Fig.2b], the random diffusion increases the diversity of structure-weighted feature fusion. 
+
+ (We upload the Jupiter file of this part [Github\_random\_matrix\.ipynb] ，you can try the code!)
+
+<p align="center">
+  <img src='./img/table-2.png' width=900 height=350>
+</p>
 
 
-### <p align="left"> Graph neural network (GNN) is a widely adopted technique to deal with graph-structured data. Despite its pervasiveness, the exact reasons for the message aggregator’s effectiveness are still poorly understood. The popular belief is that this effectiveness stems from optimizing edge weights to improve the local fusion of node information. In this work, we demonstrate that such propagation weight optimization has a limited contribution to the success of message passing. Instead, we find that any normalized random edge weights (or graph attentions) can have a similar and, sometime, even stronger effect. We refer to these randomly initialized propagations as irregular message passing. Experiments conducted on our random weight and random attention models verified the positive impact of weight randomness, uncovering the importance of the topology itself in achieving superior results for message iterations.</p>
+
+## What Is The Difference Between Good Weights and Bad Weights?
+
+1. For shallow iterations, there is no obvious difference between the well-designed weight and the normalized random weight [especially RAN vs GAT].
+2. For deep iterations, the diagonalizable propagation weight is very important [DA vs RWN 👇].
+
+<p align="center">
+  <img src='./img/table-3.png' width=800>
+</p>
+
+## My Experiment Environments
+* [Python>=3.7](https://www.python.org/)
+* [Pytorch =1.5.1](https://pytorch.org)
+* [Pytorch_Geometric=1.5.0](https://pytorch-geometric.readthedocs.io/en/latest/)
+* [Cuda = 10.2](https://pytorch.org)
+* [GPU-> 'TITAN RTX'](https://pytorch.org)
+
+
+## Code Architecture
+    .F o l d e r
+    ├── img                    # images for readme.md
+    ├── data                   # benchmark networks 
+    ├── Experiments 👇
+    Experiment-Files:
+       ├── Github_RWN.ipynb                 
+       ├── Github_RAN.ipynb					
+       ├── Github_RMN.ipynb
+       ├── Github_MixRMN.ipynb
+       ├── Github_random_matrix.ipynb
+       ├── Github RWN-DA-DAD Random Test.ipynb
+       ├── Github GCN-SAGE Random Feature Test.ipynb
+    Other-Files:
+       ├── karate_nx.edgelist
+       ├── D_A_D.py
+       ├── RWN_5_60_cora_300.txt
+       ├── DA_5_60_cora_300.txt
+
+
+## Citation
+<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> Please cite our paper if you find anything helpful
+
+```
+
+```
+
+## License
+HIT License
+
+## Contact
+For more information please contact [Li Xue](https://www.researchgate.net/profile/Xue-Li-5), 
+<p align="center">
+  <img src='./img/Me.png' width=300>
+</p>
