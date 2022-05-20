@@ -6,7 +6,8 @@ In this work, we present the surprisingly high tolerance of GNNs for irregular e
 <p align="center">
   <img src='./img/table-1.png' width=800 height=400>
 </p>
-**Graph nodes, constrained by the topology, do not need to control attentions!** To show this, we further design random attention models for another six popular attention models ranked at the top of the Open Graph Benchmark (OGB) leaderboard, and test them on ogbn-arxiv and ogbn-products datasets.
+#### Graph nodes, constrained by the topology, do not need to control attentions!
+To show this, we further design random attention models for another six popular attention models ranked at the top of the Open Graph Benchmark (OGB) leaderboard, and test them on ogbn-arxiv and ogbn-products datasets.
 
 <p align="center">
   <img src='./img/table-1.5.png' width=900 height=550>
