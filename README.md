@@ -1,13 +1,17 @@
 # Irregular Message Passing Networks
-**CORE ISSUE**: Is the effectiveness of message passing uniquely tied to the well-designed GNN propagation weight? Or could a similar effect be achieved using some ”bad” edge weights?
+**CORE ISSUE**: ***Is the effectiveness of message passing uniquely tied to the well-designed GNN propagation weight? Or could a similar effect be achieved using some ”bad” edge weights?***
 
-In this work, we present the surprising positive impact of weight randomness on message passing. Through extensive experiments, we find that any normalized random edge weights (or graph attentions) can have a similar and, sometime, even stronger effect.
+In this work, we present the surprisingly high tolerance of GNNs for irregular edge weights. Through extensive experiments, we find that any normalized random edge weights (or graph attentions) can have a similar and, sometime, even stronger effect.
 
 <p align="center">
   <img src='./img/table-1.png' width=800 height=400>
 </p>
+**Graph nodes, constrained by the topology, do not need to control attentions!** To show this, we further design random attention models for another six popular attention models ranked at the top of the Open Graph Benchmark (OGB) leaderboard, and test them on ogbn-arxiv and ogbn-products datasets.
 
-## Overview
+<p align="center">
+  <img src='./img/table-1.5.png' width=900 height=550>
+</p>
+## Method Overview
 
 #### Random Weight Network (RWN):
 
@@ -18,37 +22,28 @@ In this work, we present the surprising positive impact of weight randomness on 
 #### Random Attention Network (RAN):
 
 <p align="center">
-  <img src='./img/RAN.png' width=450>
+  <img src='./img/RAN.png' width=550>
 </p>
+
 
 #### Random Multi-attention Network (RMN):
 
 <p align="center">
-  <img src='./img/RMN.png' width=650>
+  <img src='./img/RMN.png' width=550>
 </p>
 
-
-
-
-## Explanation
-The positive impact of normalized random weights on message passing is not serendipitous. The finding is: when random perturbations do not change the singular values of the original aggregator too much [Fig.2a vs Fig.2b], the random diffusion increases the diversity of structure-weighted feature fusion. 
-
- (We upload the Jupiter file of this part [Github\_random\_matrix\.ipynb] ，you can try the code!)
+## Attention? Random Attention Please!
+We vary the variance of random attentions and hold learned parameters constant, running 1000 times, to observe the performance change. Table16 shows that **the randomness of attentions has a negligible effect on performance as a whole**.
 
 <p align="center">
-  <img src='./img/table-2.png' width=900 height=350>
+  <img src='./img/table-2.png' width=900 height=200>
 </p>
-
-
-
-## What Is The Difference Between Good Weights and Bad Weights?
-
-1. For shallow iterations, there is no obvious difference between the well-designed weight and the normalized random weight [especially RAN vs GAT].
-2. For deep iterations, the diagonalizable propagation weight is very important [DA vs RWN 👇].
+The so-called “bad attentions” are not really worse as expected.
 
 <p align="center">
-  <img src='./img/table-3.png' width=800>
+  <img src='./img/table-3.png' width=900 height=230>
 </p>
+
 
 ## My Experiment Environments
 * [Python = 3.7](https://www.python.org/)
@@ -81,10 +76,6 @@ The positive impact of normalized random weights on message passing is not seren
 
 ## Citation
 <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> Please cite our paper if you find anything helpful
-
-```
-
-```
 
 ## License
 HIT License
