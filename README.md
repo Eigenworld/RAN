@@ -42,7 +42,7 @@ We vary the variance of random attentions and hold learned parameters constant, 
 <p align="center">
   <img src='./img/table-2.png' width=900 height=200>
 </p>
-The so-called “bad attentions” are not really worse as expected.
+The so-called “bad attentions” are not really worse as expected compared with the SOTA result—76.33%. 👇
 
 <p align="center">
   <img src='./img/table-3.png' width=900 height=230>
