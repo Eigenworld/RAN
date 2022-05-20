@@ -11,7 +11,8 @@ In this work, we present the surprisingly high tolerance of GNNs for irregular e
 <p align="center">
   <img src='./img/table-1.5.png' width=900 height=550>
 </p>
-## Method Overview
+
+### Method Overview
 
 #### Random Weight Network (RWN):
 
