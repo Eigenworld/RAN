@@ -77,6 +77,10 @@ The so-called “bad attentions” are not really worse as expected compared wit
        ├── RWN_5_60_cora_300.txt
        ├── DA_5_60_cora_300.txt
 
+## Official Comic
+<p align="center">
+  <img src='./img/fun.jpg' width=550 height=600>
+</p>
 
 ## Citation
 <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> Please cite our paper if you find anything helpful
