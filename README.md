@@ -1,5 +1,5 @@
 # Irregular Message Passing Networks
-##### Advertisement:: I am looking for a postdoctoral position! nefu_education@126.com
+##### Advertisement:: I am looking for a postdoctoral position! I can explain more than you think!
 
 **CORE ISSUE**: ***Is the effectiveness of message passing uniquely tied to the well-designed GNN propagation weight? Or could a similar effect be achieved using some ”bad” edge weights?***
 
@@ -93,6 +93,8 @@ The so-called “bad attentions” are not really worse as expected compared wit
 HIT License
 
 ## Contact
+Email:  nefu_education@126.com
+
 For more information please contact [Li Xue](https://www.researchgate.net/profile/Xue-Li-5), 
 
 <p align="center">
