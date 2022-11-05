@@ -1,4 +1,6 @@
 # Irregular Message Passing Networks
+##### Advertisement:: I am looking for a postdoctoral position! nefu_education@126.com
+
 **CORE ISSUE**: ***Is the effectiveness of message passing uniquely tied to the well-designed GNN propagation weight? Or could a similar effect be achieved using some ”bad” edge weights?***
 
 In this work, we present the surprisingly high tolerance of GNNs for irregular edge weights. Through extensive experiments, we find that any normalized random edge weights (or graph attentions) can have a similar and, sometime, even stronger effect.
@@ -10,6 +12,8 @@ In this work, we present the surprisingly high tolerance of GNNs for irregular e
 ### Graph nodes, constrained by the topology, do not need to control attentions!
 
 To show this, we further design random attention models for another six popular attention models ranked at the top of the Open Graph Benchmark (OGB) leaderboard, and test them on ogbn-arxiv and ogbn-products datasets.
+
+👉Repository: https://github.com/Eigenworld/RandomAttention
 
 <p align="center">
   <img src='./img/table-1.5.png' width=900 height=550>
@@ -90,6 +94,7 @@ HIT License
 
 ## Contact
 For more information please contact [Li Xue](https://www.researchgate.net/profile/Xue-Li-5), 
+
 <p align="center">
   <img src='./img/Me.png' width=300>
 </p>
