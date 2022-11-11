@@ -1,5 +1,5 @@
 # Irregular Message Passing Networks
-##### Advertisement:: I am looking for a postdoctoral position! 
+##### 🪧Advertisement:: I am looking for a postdoctoral position!🎓  Direction: Explainable AI.🤖️
 
 **CORE ISSUE**: ***Is the effectiveness of message passing uniquely tied to the well-designed GNN propagation weight? Or could a similar effect be achieved using some ”bad” edge weights?***
 
@@ -88,6 +88,8 @@ The so-called “bad attentions” are not really worse as expected compared wit
 
 ## Citation
 <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> Please cite our paper if you find anything helpful
+
+Xue. Li and Yuanzhi. Cheng. ``Irregular message passing networks," {\it Knowl Based Syst}, 257:109919, 2022.
 
 ## License
 HIT License
