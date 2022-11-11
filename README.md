@@ -1,5 +1,5 @@
 # Irregular Message Passing Networks
-##### Advertisement:: I am looking for a postdoctoral position! I can explain more than you think!
+##### Advertisement:: I am looking for a postdoctoral position! 
 
 **CORE ISSUE**: ***Is the effectiveness of message passing uniquely tied to the well-designed GNN propagation weight? Or could a similar effect be achieved using some ”bad” edge weights?***
 
